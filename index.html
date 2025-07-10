@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบแปลงเงินสกุลบาทไทย - Thai Currency Converter</title>
+    <meta name="description" content="ระบบแปลงเงินสกุลบาทไทยกับสกุลเงินต่างๆ ทั่วโลก อัตราแลกเปลี่ยนแบบเรียลไทม์">
+    <meta name="keywords" content="แปลงเงิน, สกุลเงิน, บาทไทย, อัตราแลกเปลี่ยน, currency converter">
+    <meta name="author" content="Thai Currency Converter System">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="ระบบแปลงเงินสกุลบาทไทย">
+    <meta property="og:description" content="แปลงสกุลเงินบาทไทยกับสกุลเงินต่างๆ ทั่วโลกได้อย่างรวดเร็วและแม่นยำ">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preload Thai fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- React and ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Lucide React Icons -->
+    <script src="https://unpkg.com/lucide-react@latest/dist/umd/lucide-react.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <!-- Include the Currency Converter component -->
+    <script type="text/babel" src="CurrencyConverter.jsx"></script>
+    
+    <!-- Initialize the app -->
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        ReactDOM.render(<CurrencyConverter />, document.getElementById('root'));
+    </script>
+</body>
+</html>
